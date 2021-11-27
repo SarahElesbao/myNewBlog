@@ -1,3 +1,17 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+    .card-color {
+    background: violet;
+    }
+    /* Modify the background color */
+     
+    .navbar-custom {
+        background-color: purple;
+    }
+    /* Modify brand and text color */
+     
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text {
+        color: white;
+    }
+    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+     background-color: #8B008B !important;
+    }
