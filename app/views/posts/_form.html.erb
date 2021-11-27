@@ -10,23 +10,11 @@
       </ul>
     </div>
   <% end %>
+  <%= form.text_field :title, class:"form-control mb-3", placeholder:"Título *" %>
+  <%= form.text_area :content, class:"form-control mb-3", placeholder:"Texto *" %>
+  <%= form.text_area :image, class:"form-control mb-3", placeholder:"link da imagem *" %>
 
-  <div class="field">
-    <%= form.label :tittle %>
-    <%= form.text_field :tittle %>
-  </div>
+  <small class="form-text text-muted d-block">(*) Campos obrigatórios</small>
 
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content %>
-  </div>
-
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.text_area :image %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <%= form.submit class:"btn btn-primary mt-2"  %>
 <% end %>
