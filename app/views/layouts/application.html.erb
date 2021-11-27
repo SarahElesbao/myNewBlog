@@ -39,6 +39,7 @@
   <body style="background-color:plum">
 
 
+    <%= render 'shared/header' %>
     <div class= "container">
       <br/>
 
@@ -49,6 +50,7 @@
     <% if notice %>
       <%= render 'shared/alerts' %>
     <% end %>
+
 
     <%= yield %>
     </div>
