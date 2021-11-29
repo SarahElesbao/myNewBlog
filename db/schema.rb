@@ -40,10 +40,13 @@ ActiveRecord::Schema.define(version: 2021_11_28_235622) do
     t.string "tittle"
     t.text "content"
     t.text "image"
+    t.integer "admin_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["admin_id"], name: "index_posts_on_admin_id"
   end
 
   add_foreign_key "comments", "admins"
   add_foreign_key "comments", "posts"
+  add_foreign_key "posts", "admins"
 end
