@@ -5,5 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+	
+Admin.create!(email: 'mail@email.com', password: 123456, password_confirmation: 123456)
 
-30.times do  Post.create!([{tittle: Faker::Educator.course_name,    content: Faker::TvShows::BigBangTheory.quote,    image: Faker::LoremFlickr.image(size: "400x400", search_terms: ['sports'])  }])end
+30.times do
+  Post.create!([{
+    tittle: Faker::Educator.course_name,
+    content: Faker::TvShows::BigBangTheory.quote,
+    image: Faker::LoremFlickr.image(size: "400x400", search_terms: ['sports'])
+  }])
+end
+
+  Comment.create!(post_id: 1, admin_id: 1, content: "Hello world!")
