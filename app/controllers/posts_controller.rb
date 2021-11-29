@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   skip_before_action :authenticate_admin!, only: [:show, :index]
-  before_action :set_post, only: %i[ show edit update destroy ]
+  before_action :set_post, only: %i[ edit update destroy ]
 
   # GET /posts or /posts.json
   def index
@@ -9,6 +9,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1 or /posts/1.json
   def show
+    @post = Post.find(params[:id])
   end
 
   # GET /posts/new
