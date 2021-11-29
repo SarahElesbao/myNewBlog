@@ -1,4 +1,5 @@
 <article>
+  [ <%= comment.created_at.strftime("%I:%M %p")%> ]
   <p><%= comment.content %></p>
   <small>by <%= comment.admin.email %></small>
 </article>
