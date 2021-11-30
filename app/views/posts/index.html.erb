@@ -15,7 +15,7 @@
       <%= link_to 'ler mais', post, class: "btn btn-primary" %>
       <% if admin_signed_in? %>
         <%= link_to 'Editar', edit_post_path(post), class: "btn btn-light" %>
-        <%= link_to 'destroy', post_path(post), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+        <%= link_to 'deletar', post_path(post), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
       <% end %>
     </div>
     <div class="card-footer">
@@ -23,6 +23,7 @@
     </div>
   </div>
 </div>
+  <br/>
       <% end %>
   </tbody>
 </table>
