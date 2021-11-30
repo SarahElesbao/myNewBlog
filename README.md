@@ -1,24 +1,17 @@
-# README
+# BLog com ruby on rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este blog foi criado com Ruby on Rails e banco de dados Sqlite3 e postgres. O mesmo está disponível no Heroku pela seguinte URL: https://blog-supreme.herokuapp.com/
 
-Things you may want to cover:
+Principais Gems utilizadas:
 
-* Ruby version
+Kaminari para a paginação de posts;
+Devise para o sistema de autenticação do usuário.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Para rodar o projeto na sua máquina é preciso:
+Ter o Ruby on Rails instalado (de preferência a versão utilizada para fazer o blog);
+Ter o sqlite3 instalado em sua máquina;
+Ter o yarn instalado em sua máquina;
+Rodar o comando no diretório da aplicação para gerar a base de dados: " rails db:migrate " ;
+Iniciar o servidor do Ruby on Rails com o comando: " rails s "
+Versão do Ruby: 3.0.2
+Versão do Rails: 6.1.4.1
